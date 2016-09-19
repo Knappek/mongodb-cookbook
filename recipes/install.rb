@@ -79,7 +79,6 @@ if node['mongodb']['install_method'] != 'none'
   package node[:mongodb][:package_name] do
     options packager_opts
     action :install
-    version node[:mongodb][:package_version]
   end
 end
 
